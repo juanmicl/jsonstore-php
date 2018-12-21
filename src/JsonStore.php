@@ -1,5 +1,4 @@
 <?php
-
 namespace juanmicl\jsonstorePHP;
 
 function curl_request($request, $url, $body, $header){
@@ -37,6 +36,14 @@ class JsonStore
     $response = json_decode(curl_request('POST', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row, $body, $header), true);
     return $response;
   }
+
+	public function get($token, $table, $row)
+	{
+		$body = array();
+		$header = array();
+    $response = json_decode(curl_request('GET', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row, $body, $header), true);
+    return $response;
+	}
 }
 
 ?>

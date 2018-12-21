@@ -8,5 +8,5 @@ $body = array(
   'nombre' => 'pepe',
   'edad' => 18
 );
-var_dump($jsonstore->insert($token, 'usuario', '1', $body));
+var_dump($jsonstore->get($token, 'usuario', '1'));
 ?>
