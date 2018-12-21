@@ -51,7 +51,7 @@ class JsonStore
 		$body = array();
 		$header = array();
     $response = json_decode(curl_request('GET', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row, $body, $header), true);
-    return $response['ok'];
+    return $response;
 	}
 }
 
