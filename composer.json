@@ -1,0 +1,16 @@
+{
+    "name": "juanmicl/jsonstore-php",
+    "description": "PHP Wrapper for jsonstore.io",
+    "authors": [
+        {
+            "name": "Juan Miguel",
+            "email": "contacto@juanmi.pw"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "juanmicl\\jsonstorePHP\\": "src/"
+      }
+    }
+}
