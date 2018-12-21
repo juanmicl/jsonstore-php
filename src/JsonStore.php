@@ -34,7 +34,16 @@ class JsonStore
       'Content-type: application/json'
     );
     $response = json_decode(curl_request('POST', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row, $body, $header), true);
-    return $response;
+    return $response['ok'];
+  }
+
+	public function edit($token, $table, $row, $field, $body)
+  {
+    $header = array(
+      'Content-type: application/json'
+    );
+    $response = json_decode(curl_request('PUT', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row.'/'.$field, $body, $header), true);
+    return $response['ok'];
   }
 
 	public function get($token, $table, $row)
@@ -42,7 +51,7 @@ class JsonStore
 		$body = array();
 		$header = array();
     $response = json_decode(curl_request('GET', 'https://www.jsonstore.io/'.$token.'/'.$table.'/'.$row, $body, $header), true);
-    return $response;
+    return $response['ok'];
 	}
 }
 
