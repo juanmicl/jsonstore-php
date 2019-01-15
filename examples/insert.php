@@ -9,5 +9,6 @@ $body = array(
   'age' => 18
 );
 
-echo $jsonstore->insert($token, 'user', '1', $body);
+// null for auto increment row
+echo $jsonstore->insert($token, 'user', null, $body);
 ?>
