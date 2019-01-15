@@ -1,3 +1,4 @@
+[![Latest Stable Version](https://poser.pugx.org/juanmicl/jsonstore-php/v/stable)](https://packagist.org/packages/juanmicl/jsonstore-php)  [![Total Downloads](https://poser.pugx.org/juanmicl/jsonstore-php/downloads)](https://packagist.org/packages/juanmicl/jsonstore-php) [![Latest Unstable Version](https://poser.pugx.org/juanmicl/jsonstore-php/v/unstable)](https://packagist.org/packages/juanmicl/jsonstore-php) ![compatible](https://img.shields.io/badge/PHP%207-Compatible-brightgreen.svg)
 # JsonStore-PHP
 PHP Wrapper for jsonstore.io
 ## Installation
